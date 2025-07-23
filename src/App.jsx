@@ -5,7 +5,7 @@ import Hero from "./sections/Hero";
 const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
-      A00000pp
+      Web Version 0.0.0.1-J
       <Navbar />
       <Hero />
     </div>
