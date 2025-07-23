@@ -13,7 +13,10 @@ const HeroText = () => {
           </p>
           {/*<div>This is just Placeholder Text</div>*/}
         </div>{" "}
-        <FlipWords words={["Secure", "Modern", "Scalable"]} />
+        <FlipWords
+          words={["Secure", "Modern", "Scalable"]}
+          className="font-black text-white text-8xl"
+        />
         <p className="text-4xl font-medium text-neutral-300">Web Solutions</p>
       </div>
       {/*Mobile View*/}
