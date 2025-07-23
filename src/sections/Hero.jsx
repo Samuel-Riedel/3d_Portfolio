@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <div>Hero</div>
+    <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">Hero</section>
   )
 }
 
