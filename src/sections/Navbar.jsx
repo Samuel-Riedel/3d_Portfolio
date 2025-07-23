@@ -20,7 +20,7 @@ const Navbar = () => {
             </div>
          </div>
          {isOpen &&(
-            <motion.div className="block overflow-hidden text-center sm:hidden">
+            <motion.div className="block overflow-hidden text-center sm:hidden" initial = {{opacity:0, x: -10}} animate={{opacity:1, x:0}} style={{maxHeight:"100vh"}} transition={{duration: 1}}>
                 <nav className="pb-5"><Navigation />
                 </nav>
                 </motion.div>)}
