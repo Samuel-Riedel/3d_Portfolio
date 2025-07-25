@@ -16,7 +16,13 @@ export function Astronaut(props) {
   const { nodes, materials, animations } = useGLTF(
     "models/tenhun_falling_spaceman_fanart.glb",
     {
+      /*This line of code imports the 3d-model for local use*/
+    },
+    {
       /*"https://3dportfolio2025.netlify.app/models/tenhun_falling_spaceman_fanart.glb"*/
+    },
+    {
+      /*This line of code imports the 3d-model for web use*/
     }
   );
   const { actions } = useAnimations(animations, group);
