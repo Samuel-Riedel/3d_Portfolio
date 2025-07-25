@@ -8,11 +8,16 @@ Title: Tenhun Falling spaceman (FanArt)
 
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import { useMotionValue, useSpring } from "motion/react";
+import { useFrame } from "@react-three/fiber";
 
 export function Astronaut(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "https://3dportfolio2025.netlify.app/models/tenhun_falling_spaceman_fanart.glb"
+    "models/tenhun_falling_spaceman_fanart.glb",
+    {
+      /*"https://3dportfolio2025.netlify.app/models/tenhun_falling_spaceman_fanart.glb"*/
+    }
   );
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
@@ -20,6 +25,16 @@ export function Astronaut(props) {
       actions[animations[0].name]?.play();
     }
   }, [actions, animations]);
+
+  const yPosition = useMotionValue(5);
+  const ySpring = useSpring(yPosition, { damping: 30 });
+  useEffect(() => {
+    ySpring.set(-1);
+  }, [ySpring]);
+
+  useFrame(() => {
+    group.current.position.y = ySpring.get();
+  });
   return (
     <group
       ref={group}
