@@ -33,7 +33,7 @@ const Navbar = () => {
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
-            Trabalhem Lucas y Alan dejen de falar tanto
+            Samuel Riedel
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
