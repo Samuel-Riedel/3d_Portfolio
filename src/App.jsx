@@ -8,6 +8,11 @@ const App = () => {
       Web Version 0.0.2.1-J
       <Navbar />
       <Hero />
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
     </div>
   );
 };
