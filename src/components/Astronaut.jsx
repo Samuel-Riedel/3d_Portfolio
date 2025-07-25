@@ -12,7 +12,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 export function Astronaut(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "/models/tenhun_falling_spaceman_fanart.glb"
+    "https://3dportfolio2025.netlify.app/models/tenhun_falling_spaceman_fanart.glb"
   );
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
