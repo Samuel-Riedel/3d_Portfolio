@@ -10,9 +10,10 @@ import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
 export function Astronaut(props) {
-  const modelPath = "/models/tenhun_falling_spaceman_fanart.glb";
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF({ modelPath });
+  const { nodes, materials, animations } = useGLTF(
+    "./public/models/tenhun_falling_spaceman_fanart.glb"
+  );
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
     if (animations.length > 0) {
