@@ -25,6 +25,7 @@ export const Hero = () => {
             position={isMobile && [0, -1.5, 0]}
           />
           <OrbitControls />
+          {/*{enableZoom={false}*/}
         </Canvas>
       </figure>
     </section>
