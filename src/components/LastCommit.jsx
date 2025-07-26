@@ -25,9 +25,10 @@ const LastCommit = () => {
   return (
     <div
       style={{
-        position: "absolute",
+        position:
+          "absolute" /* This line of code potentially should be set to fixed*/,
         left: 0,
-        top: "8%",
+        top: "99%",
         transform: "translateY(-50%)",
         background: "none",
         padding: "4px 10px",

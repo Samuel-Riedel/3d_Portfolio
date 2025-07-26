@@ -1,4 +1,4 @@
-import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import { motion, useScroll, useSpring, useTransform } from "motion/react"; // eslint-disable-line
 import React from "react";
 
 const ParallaxBackground = () => {
