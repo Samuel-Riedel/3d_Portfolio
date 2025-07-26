@@ -1,6 +1,4 @@
-{
-  /*import Astronaut from "../components/Astronaut";*/
-}
+/*import Astronaut from "../components/Astronaut";*/
 import { Canvas } from "@react-three/fiber";
 import { Astronaut } from "../components/Astronaut";
 import HeroText from "../components/HeroText";
@@ -30,8 +28,7 @@ export const Hero = () => {
                 scale={isMobile && 0.23}
                 position={isMobile && [0, -1.5, 0]}
               />
-              <OrbitControls />
-              {/*{enableZoom={false}*/}
+              <OrbitControls enableZoom={false} />
             </Float>
           </Suspense>
           <Rig />

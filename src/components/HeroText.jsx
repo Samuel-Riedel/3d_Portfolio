@@ -1,5 +1,5 @@
 import { FlipWords } from "./FlipWords";
-import { motion } from "motion/react";
+import { motion } from "motion/react"; // eslint-disable-line
 
 const HeroText = () => {
   const words = ["Secure", "Modern", "Scalable"];
@@ -20,7 +20,7 @@ const HeroText = () => {
           transition={{ delay: 1.0 }}
         >
           {" "}
-          Hi im Samuel
+          Hi I'm Samuel
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p

@@ -27,17 +27,17 @@ const LastCommit = () => {
       style={{
         position: "absolute",
         left: 0,
-        top: "1.4%",
+        top: "8%",
         transform: "translateY(-50%)",
         background: "none",
-        padding: "4px 140px",
+        padding: "4px 10px",
         borderRadius: "0 5px 5px 0",
         fontFamily: "sans-serif",
         fontSize: "14px",
         color: "#ffffff",
       }}
     >
-      {commitDate ? `${commitDate}` : "Loading..."}
+      {commitDate ? `Last Updated: ${commitDate} UTC +2` : "Loading..."}
     </div>
   );
 };

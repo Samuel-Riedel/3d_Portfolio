@@ -6,7 +6,6 @@ import LastCommit from "./components/LastCommit";
 const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
-      Last Update:
       <LastCommit />
       <Navbar />
       <Hero />
