@@ -26,9 +26,10 @@ const LastCommit = () => {
     <div
       style={{
         position:
-          "absolute" /* This line of code potentially should be set to fixed*/,
+          "fixed" /* This line of code potentially should be set to fixed*/,
         left: 0,
         top: "99%",
+        opacity: "25%",
         transform: "translateY(-50%)",
         background: "none",
         padding: "4px 10px",
@@ -38,7 +39,7 @@ const LastCommit = () => {
         color: "#ffffff",
       }}
     >
-      {commitDate ? `Last Updated: ${commitDate} UTC +2` : "Loading..."}
+      {commitDate ? `Last Commit: ${commitDate} UTC +2` : "Loading..."}
     </div>
   );
 };
