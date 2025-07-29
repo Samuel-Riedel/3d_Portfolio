@@ -1,3 +1,5 @@
+import Card from "../components/Card";
+
 const About = () => {
   return (
     <section className="c-space section-space">
@@ -30,6 +32,38 @@ const About = () => {
             <p className="flex items-end text-5xl text-gray-500">
               Coding is Art
             </p>
+            <Card
+              style={{ rotate: "75deg", top: "30%", left: "20%" }}
+              text="GRASP"
+            />
+            <Card
+              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
+              text="SOLID"
+            />
+            <Card
+              style={{ rotate: "90deg", bottom: "60%", left: "70%" }}
+              text="Design PattersP"
+            />
+            <Card
+              style={{ rotate: "-45deg", bottom: "55%", left: "0%" }}
+              text="Design Principles"
+            />
+            <Card
+              style={{ rotate: "20deg", bottom: "10%", left: "30%" }}
+              text="SRP"
+            />
+            <Card
+              style={{ rotate: "30deg", bottom: "70%", left: "70%" }}
+              image="assets/logos/csharp-pink.png"
+            />
+            <Card
+              style={{ rotate: "-45deg", bottom: "70%", left: "25%" }}
+              image="assets/logos/dotnet-pink.png"
+            />
+            <Card
+              style={{ rotate: "-45deg", bottom: "5%", left: "10%" }}
+              image="assets/logos/blazor-pink.png"
+            />
           </div>
         </div>
         {/*Grid 3*/}
